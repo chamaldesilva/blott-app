@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {SplashScreen} from '../screens/Splash';
 import {RootStackParamList} from './types';
 import {StatusBar} from 'react-native';
+import {UserInfoScreen} from '../screens/UserInfo';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -16,6 +17,7 @@ export const AppNavigator = () => {
           gestureEnabled: false,
         }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="UserInfo" component={UserInfoScreen} />
       </Stack.Navigator>
       <StatusBar
         barStyle="dark-content"
