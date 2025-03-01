@@ -1,4 +1,4 @@
-package com.blott
+package com.blottstudio.blott
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
