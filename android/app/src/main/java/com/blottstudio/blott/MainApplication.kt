@@ -1,4 +1,4 @@
-package com.blott
+package com.blottstudio.blott
 
 import android.app.Application
 import com.facebook.react.PackageList
