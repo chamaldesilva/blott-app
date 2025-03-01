@@ -5,6 +5,7 @@ import {SplashScreen} from '../screens/Splash';
 import {RootStackParamList} from './types';
 import {StatusBar} from 'react-native';
 import {UserInfoScreen} from '../screens/UserInfo';
+import {WelcomeScreen} from '../screens/Welcome';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -18,6 +19,7 @@ export const AppNavigator = () => {
         }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="UserInfo" component={UserInfoScreen} />
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
       </Stack.Navigator>
       <StatusBar
         barStyle="dark-content"
