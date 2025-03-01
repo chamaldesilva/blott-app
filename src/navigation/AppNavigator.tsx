@@ -6,6 +6,8 @@ import {RootStackParamList} from './types';
 import {StatusBar} from 'react-native';
 import {UserInfoScreen} from '../screens/UserInfo';
 import {WelcomeScreen} from '../screens/Welcome';
+import {COLORS} from '../constants/theme';
+import {NewsFeedScreen} from '../screens/NewsFeed';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -20,6 +22,15 @@ export const AppNavigator = () => {
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="UserInfo" component={UserInfoScreen} />
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen
+          name="NewsFeed"
+          component={NewsFeedScreen}
+          options={{
+            cardStyle: {
+              backgroundColor: COLORS.black,
+            },
+          }}
+        />
       </Stack.Navigator>
       <StatusBar
         barStyle="dark-content"
